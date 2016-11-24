@@ -1,0 +1,23 @@
+{
+  "name": "canjs3-webpack-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/app.js",
+  "scripts": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perehnbom/canjs3-webpack-template.git"
+  },
+  "author": "Per Ehnbom",
+  "homepage": "https://github.com/perehnbom/canjs3-webpack-template#readme",
+  "dependencies": {
+    "can": "^3.0.0",
+    "raw-loader": "^0.5.1"
+  },
+  "devDependencies": {
+    "webpack": "^2.1.0-beta.27",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
