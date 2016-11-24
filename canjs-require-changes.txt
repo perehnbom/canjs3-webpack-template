@@ -1,0 +1,30 @@
+can-compute:
+require('can-event/batch/') -> require('can-event/batch/batch')
+require('can-util/js/cid/') -> require('can-util/js/cid/cid')
+
+can-compute: proto-compute.js
+require('can-util/js/cid/') -> require('can-util/js/cid/cid')
+require('can-util/js/assign/') -> require('can-util/js/assign/assign')
+require('can-util/js/types/') -> require('can-util/js/types/types')
+require('can-util/js/is-empty-object/') -> require('can-util/js/is-empty-object/is-empty-object')
+
+can-util : dom/events/make-mutation-event
+require("../../../js/each/") -> require("../../../js/each/each")
+require("../../data/") -> require("../../data/data")
+require("../../dispatch/") -> require("../../dispatch/dispatch")
+require("../../mutation-observer/document/") -> require("../../mutation-observer/document/document")
+require("../../document/") -> require("../../document/document")
+require("../../is-of-global-document/") -> require("../../is-of-global-document/is-of-global-document")
+
+can-view-model: package.json
+"main" : "dist/cjs/can-view-model" -> "main" : "can-view-model"
+
+can-view-live: package.json:
+"main" : "dist/cjs/can-view-live" -> "main" : "can-view-live"
+
+can-simple-map: package.json
+"main": "dist/cjs/can-simple-map" -> "main": "can-simple-map"
+
+can-stache:
+require('../helpers/core') -> require('./helpers/core')
+require('../helpers/converter') -> require('./helpers/converter')
